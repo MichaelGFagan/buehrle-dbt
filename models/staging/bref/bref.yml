@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bref
+    database: baseball-source
+    schema: bref
+    tables:
+      - name: batting_war
+      - name: pitching_war
