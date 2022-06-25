@@ -35,6 +35,9 @@ vars:
 # using the `{{ config(...) }}` macro.
 models:
   buehrle_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    mart:
+      +materialized: table
+    staging:
+      schema: staging
+    util:
+      schema: staging
